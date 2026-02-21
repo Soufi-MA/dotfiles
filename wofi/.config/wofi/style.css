@@ -1,0 +1,21 @@
+window {
+  background-color: #0f0f0f;
+  color: #dddddd;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+#input {
+  background-color: #1a1a1a;
+  color: #dddddd;
+  border: none;
+  padding: 5px;
+}
+#entry {
+  padding: 5px;
+  border-radius: 4px;
+}
+#entry:selected {
+  background-color: #106363;  /* Dark teal accent */
+  color: #ffffff;
+}
