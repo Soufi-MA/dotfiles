@@ -1,5 +1,5 @@
 window {
-  background-color: #0f0f0f;
+  background-color: #0a1212;
   color: #dddddd;
   border-radius: 6px;
   font-family: sans-serif;
@@ -16,6 +16,6 @@ window {
   border-radius: 4px;
 }
 #entry:selected {
-  background-color: #106363;  /* Dark teal accent */
+  background-color: #083232;
   color: #ffffff;
 }
