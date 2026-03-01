@@ -1,0 +1,12 @@
+{
+  "group/utils": {
+    "orientation": "horizontal",
+    "modules": [
+      "network",
+      "bluetooth",
+      "custom/screenshot",
+      "custom/colorpicker",
+      "hyprland/language"
+    ]
+  }
+}

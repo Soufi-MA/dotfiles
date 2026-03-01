@@ -1,0 +1,8 @@
+{
+  "custom/net-speed": {
+    "exec": "stdbuf -o0 ~/.config/waybar/scripts/net-speed.sh wlan0",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true
+  }
+}

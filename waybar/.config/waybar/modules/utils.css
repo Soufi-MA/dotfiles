@@ -1,0 +1,29 @@
+#utils {
+  border-radius: 8px;
+  background-color: #083232;
+  padding: 4px 4px;
+  margin: 4px;
+}
+
+#network,
+#bluetooth,
+#custom-screenshot,
+#custom-colorpicker,
+#language {
+  color: #b0e8e8;
+  background: #094545;
+  padding: 0 6px;
+  margin: 0 2px;
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 25%;
+  border: none;
+}
+
+#network:hover,
+#bluetooth:hover,
+#custom-screenshot:hover,
+#custom-colorpicker:hover,
+#language:hover {
+  background: #106363;
+}

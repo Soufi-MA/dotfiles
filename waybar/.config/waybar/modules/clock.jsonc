@@ -1,0 +1,8 @@
+{
+  "clock": {
+    "format": "{:%H:%M:%S %d/%m/%Y}",
+    "timezone": "Africa/Addis_Ababa",
+    "interval": 1,
+    "tooltip": false
+  }
+}

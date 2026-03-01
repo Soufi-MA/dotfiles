@@ -1,0 +1,10 @@
+{
+  "network": {
+    "format-wifi": "󰤢",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰤠",
+    "interval": 2,
+    "tooltip-format": "{essid} ({signalStrength}%)",
+    "on-click": "nm-connection-editor"
+  }
+}

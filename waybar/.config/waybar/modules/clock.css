@@ -1,0 +1,10 @@
+#clock {
+  border-radius: 8px;
+  background-color: #083232;
+  padding: 4px 12px;
+  margin: 4px;
+}
+
+#clock:hover {
+  background-color: #094545;
+}

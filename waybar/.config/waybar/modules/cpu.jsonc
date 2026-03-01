@@ -1,0 +1,11 @@
+{
+  "cpu": {
+    "interval": 1,
+    "format": " {usage:>2}%",
+    "tooltip-format": "Usage: {usage}%\nLoad average: {load}",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  }
+}

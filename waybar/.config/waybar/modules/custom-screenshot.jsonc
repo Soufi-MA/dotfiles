@@ -1,0 +1,7 @@
+{
+  "custom/screenshot": {
+    "format": "󰹑",
+    "tooltip": "Screenshot (select area) — saved & copied",
+    "on-click": "grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && wl-copy < ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && notify-send 'Screenshot saved & copied'"
+  }
+}

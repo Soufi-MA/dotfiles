@@ -1,120 +1,45 @@
 * {
-  font-size: 12px;
-  min-height: 0;
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-  font-weight: 500;
-}
-
-#waybar {
-  background: #000208;
-  color: #6be3e3;
-  margin: 0px;
-}
-
-#workspaces,
-#cpu,
-#memory,
-#clock,
-#bluetooth,
-#network,
-#pulseaudio,
-#backlight,
-#battery {
-  background-color: #083232;
-  padding: 0.3rem 0.7rem;
-  margin: 5px 0px;
-  border-radius: 8px;
-  min-width: 0;
-  border: none;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  font-family: "JetBrainsMono Nerd Font Propo", monospace;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-#workspaces {
-  padding: 2px;
-  margin-left: 7px;
-  margin-right: 5px;
-}
-
-#cpu,
-#memory {
-  margin-right: 5px;
-}
-
-#cpu:hover,
-#memory:hover,
-#bluetooth:hover,
-#network:hover,
-#pulseaudio:hover,
-#backlight:hover,
-#battery:hover,
-#clock:hover {
-  background-color: #094545;
-}
-
-#workspaces button {
-  color: #b0e8e8;
-  border-radius: 8px;
-  padding: 0.3rem 0.6rem;
-  background: transparent;
-  transition: all 0.2s ease-in-out;
-}
-
-#workspaces button.active {
-  background-color: #106363;
-}
-
-#workspaces button:hover:not(.active) {
-  background: #094545;
-}
-
-#bluetooth,
-#network,
-#pulseaudio,
-#backlight,
-#battery {
-  border-radius: 0;
-}
-
-#bluetooth {
-  margin-left: 0px;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  font-size: 16px;
-}
-
-#battery {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  margin-right: 7px;
-}
-
-#cpu,
-#memory,
-#pulseaudio,
-#backlight,
-#network {
+#waybar {
+  background: #041616;
   color: #6be3e3;
 }
 
-#network.disconnected {
-  color: #e78284;
+#backlight,
+#battery,
+#cpu,
+#memory,
+#pulseaudio,
+#custom-net-speed {
+  background-color: #083232;
+  padding: 4px 12px;
+  margin: 4px 0 4px 8px;
+  border-radius: 8px;
 }
 
-#bluetooth {
-  color: #b0e8e8
+#backlight:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover,
+#custom-net-speed:hover {
+  background-color: #094545;
 }
 
-#bluetooth.on,
-#bluetooth.connected {
-  color: #2dd8d8;
-}
-
-#battery.charging {
-  color: #a6d189;
-}
-
-#battery.warning:not(.charging) {
-  color: #e78284;
-}
+@import "modules/workspaces.css";
+@import "modules/cpu.css";
+@import "modules/memory.css";
+@import "modules/clock.css";
+@import "modules/bluetooth.css";
+@import "modules/network.css";
+@import "modules/pulseaudio.css";
+@import "modules/backlight.css";
+@import "modules/battery.css";
+@import "modules/custom-net-speed.css";
+@import "modules/utils.css";

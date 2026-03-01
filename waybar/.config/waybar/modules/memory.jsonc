@@ -1,0 +1,12 @@
+{
+  "memory": {
+    "interval": 1,
+    "format": " {percentage}%",
+    "tooltip": true,
+    "tooltip-format": "Used: {used:0.1f}GiB\nTotal: {total:0.1f}GiB\nAvailable: {avail:0.1f}GiB\nSwap used: {swapUsed:0.1f}GiB",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  }
+}

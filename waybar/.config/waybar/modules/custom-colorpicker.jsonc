@@ -1,0 +1,7 @@
+{
+  "custom/colorpicker": {
+    "format": "󰃉",
+    "tooltip": "Pick color (copies to clipboard)",
+    "on-click": "hyprpicker -a && notify-send 'Color copied'"
+  }
+}
