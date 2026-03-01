@@ -1,0 +1,53 @@
+{
+  "group/media": {
+    "orientation": "horizontal",
+    "modules": ["custom/media-prev", "mpris", "custom/media-next", "custom/media-close"]
+  },
+
+  "custom/media-prev": {
+    "exec": "if playerctl status >/dev/null 2>&1; then echo '󰒮'; else echo ''; fi",
+    "interval": 1,
+    "on-click": "playerctl previous",
+    "tooltip": false
+  },
+
+  "mpris": {
+    "format": "{player_icon} {status_icon} {artist} - {title}",
+    "format-paused": "{player_icon} {status_icon} <i>{artist} - {title}</i>",
+    "format-stopped": "",
+
+    "player": "playerctld",
+    "max-length": 48,
+    "scroll": true,
+    "scroll-speed": 0.45,
+
+    "player-icons": {
+      "default": "",
+      "spotify": "",
+      "spotifyd": "",
+      "firefox": "󰈹",
+      "chromium": "",
+      "mpv": "󰝚"
+    },
+    "status-icons": {
+      "playing": "",
+      "paused": ""
+    },
+
+    "on-click": "playerctl play-pause"
+  },
+
+  "custom/media-next": {
+    "exec": "if playerctl status >/dev/null 2>&1; then echo '󰒭'; else echo ''; fi",
+    "interval": 1,
+    "on-click": "playerctl next",
+    "tooltip": false
+  },
+
+  "custom/media-close": {
+    "exec": "if playerctl status >/dev/null 2>&1; then echo '󰝛'; else echo ''; fi",
+    "interval": 1,
+    "on-click": "playerctl -p spotify stop; pkill -f spotify-launcher",
+    "tooltip": false
+  }
+}
