@@ -4,8 +4,8 @@
   "position": "top",
   "margin-bottom": 0,
   "height": 40,
-  "modules-left": ["battery", "backlight", "pulseaudio", "cpu", "memory", "custom/net-speed"],
-  "modules-center": ["clock", "hyprland/workspaces"],
-  "modules-right": ["group/utils"],
+  "modules-left": ["group/left"],
+  "modules-center": [],
+  "modules-right": ["hyprland/workspaces", "group/right", "clock"],
   "include": ["modules/*.jsonc"]
 }

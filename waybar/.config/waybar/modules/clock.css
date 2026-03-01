@@ -2,7 +2,8 @@
   border-radius: 8px;
   background-color: #083232;
   padding: 4px 12px;
-  margin: 4px;
+  margin: 4px 0;
+  margin-right: 8px;
 }
 
 #clock:hover {

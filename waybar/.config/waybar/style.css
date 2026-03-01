@@ -1,5 +1,5 @@
 * {
-  font-size: 13px;
+  font-size: 14px;
   padding: 0;
   margin: 0;
   font-family: "JetBrainsMono Nerd Font Propo", monospace;
@@ -9,27 +9,6 @@
 #waybar {
   background: #041616;
   color: #6be3e3;
-}
-
-#backlight,
-#battery,
-#cpu,
-#memory,
-#pulseaudio,
-#custom-net-speed {
-  background-color: #083232;
-  padding: 4px 12px;
-  margin: 4px 0 4px 8px;
-  border-radius: 8px;
-}
-
-#backlight:hover,
-#battery:hover,
-#cpu:hover,
-#memory:hover,
-#pulseaudio:hover,
-#custom-net-speed:hover {
-  background-color: #094545;
 }
 
 @import "modules/workspaces.css";
@@ -42,4 +21,5 @@
 @import "modules/backlight.css";
 @import "modules/battery.css";
 @import "modules/custom-net-speed.css";
-@import "modules/utils.css";
+@import "modules/right.css";
+@import "modules/left.css";

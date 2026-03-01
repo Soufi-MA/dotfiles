@@ -1,0 +1,6 @@
+{
+  "group/left": {
+    "orientation": "horizontal",
+    "modules": ["battery", "backlight", "pulseaudio", "cpu", "memory", "disk", "custom/net-speed"]
+  }
+}

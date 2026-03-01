@@ -1,0 +1,13 @@
+{
+  "disk": {
+    "interval": 30,
+    "format": " {percentage_used}%",
+    "path": "/",
+    "tooltip": true,
+    "tooltip-format": "Used: {used}GiB\nTotal: {total}GiB\nFree: {free}GiB",
+    "states": {
+      "warning": 80,
+      "critical": 90
+    }
+  }
+}
