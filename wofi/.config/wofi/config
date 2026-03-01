@@ -1,0 +1,7 @@
+width=500
+height=400
+lines=15
+dynamic_lines=false
+allow_markup=true
+insensitive=true
+prompt=Run
