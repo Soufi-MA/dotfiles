@@ -1,7 +1,6 @@
 [SddmGreeterTheme]
 Name=my-sddm
 Description=My SDDM
-Author=keyitdev
 Type=sddm-theme
 ConfigFile=Themes/theme.conf
 MainScript=Main.qml

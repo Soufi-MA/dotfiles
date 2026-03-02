@@ -82,7 +82,6 @@ Column {
                 username.text = currentText
             }
 
-            property var popkey: config.RightToLeftLayout == "true" ? Qt.Key_Right : Qt.Key_Left
             Keys.onPressed: function(event) {
                 if (event.key == Qt.Key_Down && !popup.opened)
                     username.forceActiveFocus();
@@ -145,8 +144,7 @@ Column {
                 implicitHeight: contentItem.implicitHeight
                 width: usernameField.width
                 y: parent.height - username.height / 3
-                x: config.RightToLeftLayout == "true" ? -loginButton.width + selectUser.width : 0
-                rightMargin: config.RightToLeftLayout == "true" ? root.padding + usernameField.width / 2 : undefined
+                x: 0
                 padding: 10
 
                 contentItem: ListView {
@@ -501,7 +499,7 @@ Column {
             Keys.onReturnPressed: clicked()
             Keys.onEnterPressed: clicked()
             
-            KeyNavigation.down: config.HideSystemButtons == "true" ? virtualKeyboard : systemButtons.children[0]
+            KeyNavigation.down: loginButton
         }
     }
 
