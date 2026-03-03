@@ -1,0 +1,13 @@
+[Unit]
+Description=SDDM Battery Updater for Theme
+After=sddm.service
+Requires=sddm.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash -c 'while true; do /usr/local/bin/sddm-battery-update.sh; sleep 6; done'
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

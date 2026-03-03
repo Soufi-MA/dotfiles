@@ -10,7 +10,7 @@ ColumnLayout {
     property bool isCharging: false
 
     Timer {
-        interval: 8000
+        interval: 6000
         running: true
         repeat: true
         triggeredOnStart: true
@@ -18,31 +18,15 @@ ColumnLayout {
     }
 
     function updateBattery() {
-        var batPath = "/sys/class/power_supply/BAT0"
-        var capFile = batPath + "/capacity"
-        var statFile = batPath + "/status"
-
-        var xhrCap = new XMLHttpRequest()
-        xhrCap.open("GET", "file://" + capFile, false)
-        xhrCap.send()
-        var cap = parseInt(xhrCap.responseText)
-
-        if (isNaN(cap) || cap < 0 || cap > 100) {
-            batPath = "/sys/class/power_supply/BAT1"
-            capFile = batPath + "/capacity"
-            statFile = batPath + "/status"
-            xhrCap.open("GET", "file://" + capFile, false)
-            xhrCap.send()
-            cap = parseInt(xhrCap.responseText) || 100
+        let xhr = new XMLHttpRequest()
+        xhr.open("GET", "file:///tmp/sddm-battery.txt", false)
+        xhr.send()
+        let lines = xhr.responseText.trim().split("\n")
+        if (lines.length >= 2) {
+            capacity = parseInt(lines[0])
+            let stat = lines[1]
+            isCharging = (stat === "Charging" || stat === "Full")
         }
-
-        var xhrStat = new XMLHttpRequest()
-        xhrStat.open("GET", "file://" + statFile, false)
-        xhrStat.send()
-        var stat = xhrStat.responseText.trim()
-
-        capacity = Math.max(0, Math.min(100, cap))
-        isCharging = (stat === "Charging" || stat === "Full")
     }
 
     property color batteryColor: isCharging ? config.TimeTextColor :
@@ -55,7 +39,6 @@ ColumnLayout {
         Layout.preferredWidth: root.font.pointSize * 5.0
         Layout.preferredHeight: root.font.pointSize * 2.0
 
-        // Body outline
         Rectangle {
             id: body
             anchors.verticalCenter: parent.verticalCenter
@@ -68,7 +51,6 @@ ColumnLayout {
             border.color: batteryColor
         }
 
-        // Nub (tip)
         Rectangle {
             id: tip
             anchors.left: body.right
@@ -79,7 +61,6 @@ ColumnLayout {
             color: batteryColor
         }
 
-        // Fill level (changes with capacity)
         Rectangle {
             id: fill
             anchors.left: body.left
@@ -92,7 +73,6 @@ ColumnLayout {
         }
     }
 
-    // Percentage under the battery
     Text {
         Layout.alignment: Qt.AlignHCenter
         text: capacity + "%"
