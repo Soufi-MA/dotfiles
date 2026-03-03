@@ -1,15 +1,4 @@
 {
-  "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": "",
-    "format-icons": {
-      "default": ["", "", " "]
-    },
-    "scroll-step": 5,
-    "on-click": "pavucontrol",
-    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-  },
-
   "pulseaudio#mic": {
     "format": "{format_source}",
     "format-source": " {volume}%",

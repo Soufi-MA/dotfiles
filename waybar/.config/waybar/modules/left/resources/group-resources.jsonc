@@ -1,0 +1,6 @@
+{
+  "group/resources": {
+    "orientation": "horizontal",
+    "modules": ["cpu", "memory", "disk"]
+  }
+}

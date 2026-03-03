@@ -1,0 +1,6 @@
+{
+  "group/controls": {
+    "orientation": "horizontal",
+    "modules": ["backlight", "pulseaudio", "pulseaudio#mic"]
+  }
+}

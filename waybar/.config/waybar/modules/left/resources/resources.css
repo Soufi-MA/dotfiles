@@ -1,0 +1,18 @@
+#cpu,
+#memory,
+#disk {
+  color: #b0e8e8;
+  background: #094545;
+  padding: 0 6px;
+  margin: 0 2px;
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+#cpu:hover,
+#memory:hover,
+#disk:hover {
+  background: #106363;
+}

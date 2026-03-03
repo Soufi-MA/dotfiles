@@ -6,12 +6,7 @@
   margin-left: 8px;
 }
 
-#backlight,
 #battery,
-#cpu,
-#memory,
-#disk,
-#pulseaudio,
 #custom-net-speed {
   color: #b0e8e8;
   background: #094545;
@@ -23,12 +18,7 @@
   border: none;
 }
 
-#backlight:hover,
 #battery:hover,
-#cpu:hover,
-#memory:hover,
-#disk:hover,
-#pulseaudio:hover,
 #custom-net-speed:hover {
   background: #106363;
 }

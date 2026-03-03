@@ -1,15 +1,6 @@
 {
   "group/left": {
     "orientation": "horizontal",
-    "modules": [
-      "battery",
-      "backlight",
-      "pulseaudio",
-      "pulseaudio#mic",
-      "cpu",
-      "memory",
-      "disk",
-      "custom/net-speed"
-    ]
+    "modules": ["battery", "group/controls", "group/resources", "custom/net-speed"]
   }
 }

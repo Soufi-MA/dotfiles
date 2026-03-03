@@ -11,7 +11,11 @@
   color: #6be3e3;
 }
 
-@import "modules/right/utils/utils.css";
 @import "modules/right/right.css";
+@import "modules/right/utils/utils.css";
+
 @import "modules/left/left.css";
+@import "modules/left/controls/controls.css";
+@import "modules/left/resources/resources.css";
+
 @import "modules/center/center.css";
