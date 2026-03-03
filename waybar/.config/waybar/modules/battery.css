@@ -1,7 +1,0 @@
-#battery.charging {
-  color: #a6d189;
-}
-
-#battery.warning:not(.charging) {
-  color: #e78284;
-}

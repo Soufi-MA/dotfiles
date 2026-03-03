@@ -1,5 +1,5 @@
 {
-  "group/media": {
+  "group/center": {
     "orientation": "horizontal",
     "modules": ["custom/media-prev", "mpris", "custom/media-next", "custom/media-close"]
   },

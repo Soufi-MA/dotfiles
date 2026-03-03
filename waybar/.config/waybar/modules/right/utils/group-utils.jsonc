@@ -1,5 +1,5 @@
 {
-  "group/right": {
+  "group/utils": {
     "orientation": "horizontal",
     "modules": [
       "network",

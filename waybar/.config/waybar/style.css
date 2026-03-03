@@ -11,16 +11,7 @@
   color: #6be3e3;
 }
 
-@import "modules/workspaces.css";
-@import "modules/cpu.css";
-@import "modules/memory.css";
-@import "modules/clock.css";
-@import "modules/bluetooth.css";
-@import "modules/network.css";
-@import "modules/pulseaudio.css";
-@import "modules/backlight.css";
-@import "modules/battery.css";
-@import "modules/custom-net-speed.css";
-@import "modules/right.css";
-@import "modules/left.css";
-@import "modules/media.css";
+@import "modules/right/utils/utils.css";
+@import "modules/right/right.css";
+@import "modules/left/left.css";
+@import "modules/center/center.css";

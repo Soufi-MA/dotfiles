@@ -1,4 +1,4 @@
-#right {
+#utils {
   border-radius: 8px;
   background-color: #083232;
   padding: 4px 4px;
@@ -27,4 +27,13 @@
 #custom-colorpicker:hover,
 #language:hover {
   background: #106363;
+}
+
+#network.disconnected {
+  color: #e78284;
+}
+
+#bluetooth.on,
+#bluetooth.connected {
+  color: #2dd8d8;
 }
