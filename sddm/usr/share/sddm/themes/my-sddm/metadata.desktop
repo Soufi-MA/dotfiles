@@ -1,8 +1,0 @@
-[SddmGreeterTheme]
-Name=my-sddm
-Description=My SDDM
-Type=sddm-theme
-ConfigFile=Themes/theme.conf
-MainScript=Main.qml
-TranslationsDirectory=translations
-QtVersion=6
