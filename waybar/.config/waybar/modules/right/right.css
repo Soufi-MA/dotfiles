@@ -3,7 +3,6 @@
   background-color: #083232;
   padding: 4px 4px;
   margin: 4px 0;
-  margin-right: 4px;
 }
 
 #workspaces button {
@@ -36,3 +35,11 @@
 #clock:hover {
   background-color: #094545;
 }
+
+#tray {
+  border-radius: 8px;
+  background-color: #083232;
+  padding: 4px 12px;
+  margin: 4px;
+}
+

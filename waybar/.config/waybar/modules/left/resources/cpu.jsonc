@@ -6,6 +6,7 @@
     "states": {
       "warning": 70,
       "critical": 90
-    }
+    },
+    "on-click": "exec foot -e btop"
   }
 }

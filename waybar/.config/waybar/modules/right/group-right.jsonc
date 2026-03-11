@@ -1,6 +1,6 @@
 {
   "group/right": {
     "orientation": "horizontal",
-    "modules": ["hyprland/workspaces", "group/utils", "clock"]
+    "modules": ["hyprland/workspaces", "tray", "group/utils", "clock"]
   }
 }
