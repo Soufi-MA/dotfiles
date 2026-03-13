@@ -1,11 +1,11 @@
-PROMPT='%n %~ %# '
+PROMPT='%F{4}%n%f %F{2}%~%f %F{1}%#%f '
 
-bindkey '^[[1;5C' forward-word
-bindkey '^[[1;5D' backward-word
-bindkey '^[[1;2C' forward-char
-bindkey '^[[1;2D' backward-char
-bindkey '^[[1;2A' up-line-or-history
-bindkey '^[[1;2B' down-line-or-history
+source ~/.local/share/zsh/plugins/zsh-shift-select/zsh-shift-select.plugin.zsh
+
+bindkey '^[[1;5C' forward-word          
+bindkey '^[[1;5D' backward-word         
+bindkey '^[[H' beginning-of-line        
+bindkey '^[[F' end-of-line              
 
 autoload -Uz compinit
 compinit

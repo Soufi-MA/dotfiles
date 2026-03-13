@@ -1,7 +1,7 @@
 window {
     margin: 0px;
-    border: 2px solid #083232;
-    background-color: #041616;
+    border: 2px solid #1a1a1a;
+    background-color: #0d0d0d;
     border-radius: 8px;
     font-family: sans-serif;
     font-size: 12px;
@@ -10,9 +10,9 @@ window {
 
 #input {
     margin: 8px;  
-    border: 1px solid #2dd7d7;
+    border: 1px solid #444444;
     color: #dddddd;
-    background-color: #041616;
+    background-color: #0d0d0d;
     border-radius: 8px;  
     padding: 6px 12px; 
     outline: none;
@@ -49,7 +49,7 @@ window {
 }
 
 #entry:selected {
-    background-color: #083232;
+    background-color: #1a1a1a;
     color: #ffffff;
     border: none;
     border-radius: 8px;
